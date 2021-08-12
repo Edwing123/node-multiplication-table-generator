@@ -4,6 +4,16 @@
 simple multiplication table generator CLI program.
 
 
+# Help options
+
+```
+Options:
+      --help        Show help                                                              [boolean]
+      --version     Show version number                                                    [boolean]
+  -b, --base        The base number to be used in the multiplication table       [number] [required]
+  -l, --limit       The limit number to be used in the multiplication table   [number] [default: 12]
+      --list, --ls  List the multiplication table results                 [boolean] [default: false]
+```
 ## Examples
 
 > In order to the tables files to be saved in `./data`,
