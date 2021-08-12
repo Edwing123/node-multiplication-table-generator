@@ -32,37 +32,7 @@ const writeNumberTable = async (table) => {
     }
 }
 
-const parseTableArgs = (args) => {
-    const defaultOptions = {
-        base: 12,
-        limit: 12
-    }
-
-    const baseRE = /^(--base|-b)=(\d+)/
-    const limitRE = /^(--limit|-lim)=(\d+)/
-    const options = {}
-    
-    args.forEach((option) => {
-        const base = option.match(baseRE)
-        const limit = option.match(limitRE)
-
-        base
-            ? options.base = Number.parseInt(base[2])
-            : void 0
-
-        limit
-            ? options.limit = Number.parseInt(limit[2])
-            : void 0
-    })
-
-    return {
-        ...defaultOptions,
-        ...options
-    }
-}
-
 module.exports = {
     createNumberTable,
     writeNumberTable,
-    parseTableArgs
 }
