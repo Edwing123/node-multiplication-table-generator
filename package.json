@@ -1,0 +1,14 @@
+{
+  "name": "node-the-basics",
+  "version": "0.0.1",
+  "description": "Multiplication table generator.",
+  "main": "app.js",
+  "author": "Edwin Garcia <egarciavalle2014@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "colors": "^1.4.0",
+    "node-emoji": "^1.11.0",
+    "yargs": "^17.1.0"
+  }
+}
