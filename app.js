@@ -6,21 +6,17 @@ const emojis = require('node-emoji')
 const utils = require('./utils')
 
 
-
 ;(async () => {
     const { base, limit, list } = args
     const numberTable = await utils.createNumberTable(base, limit)
-    // console.log(args)
-    console.clear()
 
-    
+    console.clear()
     if (list) {
         console.log(numberTable.title.bold.green)
         for (let v of numberTable.values) {
             console.log(v)
         }
     }    
-
 
     try {
         response = await utils.writeNumberTable(numberTable)
