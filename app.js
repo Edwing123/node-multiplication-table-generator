@@ -1,5 +1,4 @@
-#!/home/edwing123/.tools/nvm/versions/node/v16.6.1/bin/node
-
+#!/usr/bin/env node
 require('colors')
 const args = require('./config-args')
 const emojis = require('node-emoji')
